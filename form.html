@@ -5,14 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário em Bootstrap</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        legend{
+            font-weight: bolder;
+        }
+    </style>
 </head>
 <body>
     <section>
-        <header>
-            <h1>Envie Sua Mensagem</h1>
-        </header>
         <div class="container">
             <form action="#">
+                <legend>Envie Sua Mensagem</legend>
                 <div>
                     <label class="form-label">E-mail</label>
                     <input class="form-control" type="text" name="email" placeholder="name@example.com">
@@ -21,6 +24,8 @@
                     <label for="#" class="form-label"> Mensagem: </label>
                     <textarea name="msg" id="msg" cols="30" rows="10" class="form-control"></textarea>
                 </div>
+                <button type="button" class="btn btn-primary ">Enviar</button>
+                <button type="button" class="btn btn-danger ">Limpar</button>
             </form>
 
         </div>
